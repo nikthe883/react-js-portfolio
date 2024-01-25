@@ -51,15 +51,30 @@ header{
 /* MEDIA QUERIES MEDIUM DEVICES*/
 @media screen and (max-width:1024px){
     header{
-        height: 68vh;
+        height: 100vh;
     }
-
 }
 
 /* MEDIA QUERIES SMALL DEVICES*/
 @media screen and (max-width:600px){
     header{
         height: 100vh;
+    }
+    .header__socials, .scroll__down{
+        display: none;
+    }
+    .header__container .me{
+        width: 70%;
+        position: absolute;
+        left: 15%;
+        
+    }
+}
+
+/* For extra small devices */
+@media screen and (max-width:380px){
+    header{
+        height: 130vh;
     }
     .header__socials, .scroll__down{
         display: none;
