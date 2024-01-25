@@ -68,9 +68,7 @@ header{
     header{
         height: 100vh;
     }
-    .header__socials, .scroll__down{
-        display: none;
-    }
+
     .header__container .me{
         width: 70%;
         position: absolute;
@@ -84,7 +82,5 @@ header{
     header{
         height: 130vh;
     }
-    .header__socials, .scroll__down{
-        display: none;
-    }
+
 }

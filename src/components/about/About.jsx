@@ -33,7 +33,7 @@ const About = () => {
             
           </div>
           <div>
-              <p>some text some text some text some text some text some text some textsome 
+              <p className='about__me__p'>Some text some text some text some text some text some text some textsome 
                 text some textsome textsome textsome textsome textsome 
                 some textsome textsome textsome textsome textsome text
                 some textsome textsome textsome textsome text
