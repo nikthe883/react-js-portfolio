@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 1rem;
     overflow: hidden;
 }
 .header__container{
@@ -10,20 +10,20 @@ header{
 }
 
 .cta{
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
 }
 
 .header__socials{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left:0;
-    bottom: 3rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.header__socials a{
+    padding-left: 1rem;
+   
 }
 
 .header__container .me{
@@ -31,7 +31,6 @@ header{
     width: 23rem;
     position: absolute;
     left: calc(50% - 11rem);
-    margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
