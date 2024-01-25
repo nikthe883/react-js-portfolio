@@ -1,8 +1,7 @@
 nav{
     background: rgba(0, 0, 0, 0.3);
-    width: max-content;
     display: flex;
-    padding: 0.7rem 1,7rem;
+    padding: 0.7rem 1.7rem;
     z-index: 2;
     position: fixed;
     left:50%;
@@ -11,7 +10,6 @@ nav{
     gap: 2rem;
     border-radius: 2rem;
     backdrop-filter: blur(15px);
-    
 }
 nav a {
     background: transparent;
@@ -28,4 +26,14 @@ nav a:hover{
 .active{
     background-color:rgba(27, 27, 27, 0.4);
     color:var(--color-light)
+}
+
+/* MEDIA QUERIES SMALL DEVICES*/
+@media screen and (max-width:600px){
+    nav a{
+        font-size: 0.6rem;
+    }
+    nav{
+        gap: 0.3rem;
+    }
 }

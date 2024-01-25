@@ -10,7 +10,7 @@ const Nav = () => {
   return (
     <div>
       <nav>
-        <Link activeClass="active"  spy to="header">Home</Link>
+        <Link activeClass="active"   spy to="header">Home</Link>
         <Link activeClass="active"  spy to="about">About</Link>
         <Link activeClass="active"  spy to="experience">Experience</Link>
         <Link activeClass="active"  spy to="portfolio">Projects</Link>
