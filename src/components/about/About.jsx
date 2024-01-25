@@ -38,8 +38,10 @@ const About = () => {
                 some textsome textsome textsome textsome textsome text
                 some textsome textsome textsome textsome text
                 some textsome textsome textsome texttextsome textsome textsome text</p>
-            </div>
+            </div >
+            <div className='lets__talk'>
             <a href='#contact' className='btn btn-primary'> Lets Talk!</a>
+            </div>
         </div>
       </div>
     </section>
