@@ -5,10 +5,15 @@ import ME from '../../assets/me.png'
 import HeaderSocial from './HeaderSocials'
 
 
-const Header = () => {
+const Header = ({showParticles, handleToggleParticles}) => {
+
+
   return (
     <header id='header'>
       <div className="container header__container">
+
+      
+
         <h5>Hello I am</h5>
         <h1>Peter</h1>
         <h5 className='text-light'>Junior Python Developer</h5>
@@ -18,9 +23,14 @@ const Header = () => {
         <div className="me">
           <img src={ME} alt='me'></img>
         </div>
+        
 
         <a href='#contact' className='scroll__down'>Scroll To Bottom</a>
-
+        <a href='#!' className='show__hide__particles' onClick={handleToggleParticles}>
+        {showParticles ? 'Hide Particles' : 'Show Particles'}
+        
+      </a>
+        
       </div>
     </header>
   )

@@ -46,12 +46,22 @@ header{
     font-size: 0.9rem;
 }
 
+.show__hide__particles{
+    position: absolute;
+    left: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
 /* MEDIA QUERIES MEDIUM DEVICES*/
 @media screen and (max-width:1024px){
     header{
         height: 100vh;
     }
-    .scroll__down, .header__socials{
+    .scroll__down, .header__socials, .show__hide__particles{
         bottom: 50%;
     }
     .header__container .me{

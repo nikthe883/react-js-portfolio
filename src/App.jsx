@@ -1,7 +1,9 @@
 import React from 'react'
+import { useState } from 'react'
+
 import ParticleBackground from './components/particlesBackground'
 
-import Header from './components/header/Header'
+import Header  from './components/header/Header'
 import Nav from './components/nav/Nav'
 import About from './components/about/About'
 import Experience from './components/experiance/Experience'
@@ -12,18 +14,24 @@ import Footer from './components/footer/Footer'
 
 const App = () => {
 
+  const [showParticles, setShowParticles] = useState(true);
+  const handleToggleParticles = () => {
+    setShowParticles(!showParticles);
+  }
   
+
   return (
     <>
-      
-      <Header />
+
+      <Header showParticles={showParticles}
+      handleToggleParticles ={handleToggleParticles}/>
       <Nav />
       <About />
       <Experience />
       <Portfolio />
       <Contact />
       <Footer />
-      <ParticleBackground />
+      {showParticles && <ParticleBackground />}
 
     </>
   )

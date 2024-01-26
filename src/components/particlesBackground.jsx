@@ -16,16 +16,19 @@ useEffect(() => {
   });
 }, []);
 
+
+
 const particlesLoaded = (container) => {
   console.log(container);
 };
 
 	return (
-		<Particles
+
+    <Particles
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-      />
+      /> 
 		
 	);
 }
