@@ -28,11 +28,14 @@ h2,h5{
 
 }
 .about__card{
-    background: var(--color-bg-variant);
+    background: #1560bd;
     border: 1px solid rgb(34, 54, 235);
     padding: 2rem;
     border-radius: 0.5rem;
     transition: var(--transition);
+    -webkit-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+-moz-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
 }
 .about__card:hover{
     background: transparent;
