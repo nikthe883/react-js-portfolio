@@ -24,6 +24,7 @@ h2,h5{
 .about__cards{
     display:flex;
     gap: 1.5rem;
+    text-align: center;
 
 }
 .about__card{

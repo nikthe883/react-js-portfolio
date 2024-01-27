@@ -14,6 +14,7 @@ const Experience = () => {
           <div className="experience__language">
             <h5>Python</h5>
             <h6>Advanced</h6>
+            
           </div>
         <div className="experience__language">
           <h5>Python</h5>

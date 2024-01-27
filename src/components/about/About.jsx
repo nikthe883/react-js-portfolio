@@ -19,6 +19,7 @@ const About = () => {
             <article className='about__card'>
             <h4>Experiance</h4>
               <p>3 years of Experiance</p>
+              <a href='#contact' className='btn'>Show More</a>
             </article>
 
             <article className='about__card'>

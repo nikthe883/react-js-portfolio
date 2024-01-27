@@ -1,4 +1,23 @@
+h4,h2{
+    text-align: center;
+}
 
+.experience__container{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center; 
+    
+}
+
+.experience__language{
+    margin: 0.5rem;
+    background: var(--color-bg-variant);
+    border: 1px solid rgb(34, 54, 235);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+    text-align: center;
+}
 
 
 @media screen and (max-width:1024px){
