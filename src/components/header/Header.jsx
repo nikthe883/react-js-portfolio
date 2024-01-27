@@ -13,10 +13,12 @@ const Header = ({showParticles, handleToggleParticles}) => {
       <div className="container header__container">
 
       
-
-        <h5>Hello I am</h5>
-        <h1>Peter</h1>
-        <h5 className='text-light'>Junior Python Developer</h5>
+        <div className='introduction'>
+        
+        <h1> Hello I am Peter</h1>
+        <h3 className='text-light'>Junior Python Developer</h3>
+        </div>
+        
         <CTA></CTA>
         <HeaderSocial></HeaderSocial>
 

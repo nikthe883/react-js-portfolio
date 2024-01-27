@@ -55,6 +55,12 @@ header{
     font-size: 0.9rem;
     cursor: pointer;
 }
+.introduction{
+    position: absolute;
+    left: -2.3rem;
+    top: 10rem;
+    
+}
 
 /* MEDIA QUERIES MEDIUM DEVICES*/
 @media screen and (max-width:1024px){
@@ -69,6 +75,10 @@ header{
         position: absolute;
         left: 20%;
         
+    }
+    .introduction{
+        all: unset;
+
     }
 
 }
@@ -85,12 +95,20 @@ header{
         left: 15%;
         
     }
+    .introduction{
+        all: unset;
+        
+    }
 }
 
 /* For extra small devices */
 @media screen and (max-width:380px){
     header{
         height: 130vh;
+    }
+    .introduction{
+        all: unset;
+        
     }
 
 }
