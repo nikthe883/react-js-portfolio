@@ -14,7 +14,7 @@ import Footer from './components/footer/Footer'
 
 const App = () => {
 
-  const [showParticles, setShowParticles] = useState(true);
+  const [showParticles, setShowParticles] = useState(false);
   const handleToggleParticles = () => {
     setShowParticles(!showParticles);
   }
