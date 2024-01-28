@@ -1,8 +1,22 @@
 import React from 'react'
+import { useState } from 'react'
 import "./about.css"
 import ME from '../../assets/me-about.jpg'
 
+const data = [
+  { title: "Experiance", experiance: "3 years of Experiance" },
+  { title: "Python", experiance: "Advanced" },
+  { title: "Python", experiance: "Advanced" },
+];
+
+
+
 const About = () => {
+  const [showMore, setShowMore] = useState(false)
+  const hancleClick = () => {
+    setShowMore(!showMore)
+  };
+
   return (
     <section id='about'>
       <h5>Get To Know</h5>
@@ -14,24 +28,25 @@ const About = () => {
           </div>
 
         </div>
-        <div className='about__content'>
-          <div className="about__cards">
-            <article className='about__card'>
-            <h4>Experiance</h4>
-              <p>3 years of Experiance</p>
-              <a href='#contact' className='btn'>Show More</a>
-            </article>
+        
 
-            <article className='about__card'>
-              <h4>Experiance</h4>
-              <p>3 years of Experiance</p>
-            </article>
+          <div className='about__content'>
+            <div className="about__cards">
 
+           
+                {data.map(({title, experiance }) => {
+          return (
             <article className='about__card'>
-            <h4>Experiance</h4>
-              <p>3 years of Experiance</p>
+            <h4>{title}</h4>
+              <p>{experiance}</p>
+              <a className='btn' onClick={hancleClick}>Show More</a>
+              {showMore &&(
+                <h2>More content</h2>
+              )}
             </article>
-            
+          );
+        })}
+                
           </div>
           <div>
               <p className='about__me__p'>Some text some text some text some text some text some text some textsome 
