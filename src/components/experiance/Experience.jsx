@@ -12,13 +12,13 @@ const Experience = () => {
   return (
     <section id="experience">
       <h4>Skills I Have</h4>
-      <h2>My Experience</h2>
+      <h2> Experience</h2>
       <div className=".container experience__container">
         {data.map(({title, experiance }) => {
           return (
             <div className="experience__language">
-              <h5>Python</h5>
-              <h6>Advanced</h6>
+              <h3>Python</h3>
+              <h4>Advanced</h4>
             </div>
           );
         })}
