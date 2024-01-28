@@ -4,7 +4,16 @@ import "./experiance.css";
 const data = [
   {id:1,
   title:'Python',
-  experiance:'Advanced'}
+  experiance:'Advanced'},
+  {id:1,
+    title:'Python',
+    experiance:'Advanced'},
+  {id:1,
+    title:'Python',
+    experiance:'Advanced'},
+  {id:1,
+    title:'Python',
+    experiance:'Advanced'}
 ]
 
 
