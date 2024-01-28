@@ -1,6 +1,11 @@
 import React from "react";
 import "./experiance.css";
 
+const data = [
+  {id:1,
+  title:'Python',
+  experiance:'Advanced'}
+]
 
 
 const Experience = () => {
@@ -11,31 +16,18 @@ const Experience = () => {
       <h4>Skills I Have</h4>
       <h2>My Experience</h2>
       <div className=".container experience__container">
-          <div className="experience__language">
-            <h5>Python</h5>
-            <h6>Advanced</h6>
-            
-          </div>
-        <div className="experience__language">
-          <h5>Python</h5>
-          <h6>Advanced</h6>
-        </div>
-        <div className="experience__language">
-          <h5>Python</h5>
-          <h6>Advanced</h6>
-        </div>
-        <div className="experience__language">
-          <h5>Python</h5>
-          <h6>Advanced</h6>
-        </div>
-        <div className="experience__language">
-          <h5>Python</h5>
-          <h6>Advanced</h6>
-        </div>
-        <div className="experience__language">
-          <h5>Python</h5>
-          <h6>Advanced</h6>
-        </div>
+      {
+                  data.map(({id,title,experiance}) => {
+                    return (
+                      <div className="experience__language">
+                      <h5>Python</h5>
+                      <h6>Advanced</h6>
+                      
+                    </div>
+                    )
+          })
+        }
+          
       </div>
     </section>
   );
