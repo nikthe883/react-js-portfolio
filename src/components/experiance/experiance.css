@@ -25,6 +25,9 @@ h4,h2{
     border-radius: 0.5rem;
     transition: var(--transition);
     text-align: center;
+    -webkit-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+    -moz-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+    box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
 }
 
 .experience__language:hover{
