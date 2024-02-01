@@ -11,8 +11,8 @@ const data = [
 const Experience = () => {
   return (
     <section id="experience">
-      <h4>Skills I Have</h4>
-      <h2> Experience</h2>
+      <h3>Skills I Have</h3>
+      <h1> Experience</h1>
       <div className="container experience__container">
         {data.map(({title, experiance }) => {
           return (
