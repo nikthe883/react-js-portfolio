@@ -70,12 +70,15 @@ section{
     height: 100vh;
 
 }
-section > h2 section > h5 {
+section > h1 {
     text-align: center;
     color: var(--color-light);
 }
+h3{
+    text-align: center;
+}
 
-section >h2 {
+section > h1 {
     color: var(--color-primary);
     margin-bottom: 3rem;
 }

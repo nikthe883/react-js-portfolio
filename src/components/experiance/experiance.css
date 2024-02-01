@@ -12,16 +12,23 @@ h4,h2{
     grid-template-columns: repeat(3, 1fr);
     align-items: center; 
     
+    
 }
+
 
 .experience__language{
     margin: 0.5rem;
-    background: var(--color-bg-variant);
+    background: #1560bd;
     border: 1px solid rgb(34, 54, 235);
     padding: 1rem;
     border-radius: 0.5rem;
     transition: var(--transition);
     text-align: center;
+}
+
+.experience__language:hover{
+    border-color: var(--color-primary-variant);
+    background: transparent;
 }
 
 
@@ -32,18 +39,13 @@ h4,h2{
 @media screen and (max-width:600px){
     .experience__container{
         display: grid; 
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         align-items: center; 
-        
-        
     }
     .experience__language{
-        margin: 0.5rem;
-        background: var(--color-bg-variant);
-        border: 1px solid rgb(34, 54, 235);
-        padding: 1rem;
-        border-radius: 0.5rem;
-        transition: var(--transition);
-        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
+    
+
 }

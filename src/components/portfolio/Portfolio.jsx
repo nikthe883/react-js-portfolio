@@ -23,8 +23,8 @@ const Portfolio = () => {
 
   return (
     <section id='portfolio'>
-    <h5> My Recent Work </h5>
-    <h2> Portfolio </h2>
+    <h3> My Recent Work </h3>
+    <h1> Portfolio </h1>
 
     <div className='container portfolio__container'>
 
@@ -37,13 +37,13 @@ const Portfolio = () => {
                 <a href={github} className='btn' target='_blank'>Github</a>
 
                 <a className='btn long-text' onClick={() => handleClick(index)}>
-                  {showMore[index] ? 'Show Less' : 'Show More'}
+                  {showMore[index] ? 'Less' : 'More'}
                 </a>
                 {showMore[index] && (
                   <h2>{content}</h2>
                 )}
 
-                <a href={demo} className='btn long-text' target='_blank'>Live Demo</a>
+                <a href={demo} className='btn long-text' target='_blank'>Demo</a>
 
                 </div>
               </article>
