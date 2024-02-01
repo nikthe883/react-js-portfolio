@@ -5,8 +5,8 @@ import IMG1 from '../../assets/portfolio1.jpg'
 
 
 const data = [
-  {title: "Portfolio item title 1", img: IMG1, github:"https://github.com/nikthe883/Django-Thought-Project", content:"Show more 1", demo:"https://github.com/" },
-  {title: "Portfolio item title 2", img: IMG1, github:"https://github.com/", content:"Show more 2", demo:"https://github.com/" },
+  {title: "Portfolio item title 1", img: IMG1, github:"https://github.com/nikthe883/Django-Thought-Project", content:"S", demo:"https://github.com/" },
+  {title: "Portfolio item title 2", img: IMG1, github:"https://github.com/", content:"Show more 2wwwwwwwwwwwwwwwwwwwwwwwwwwwwwww222", demo:"https://github.com/" },
   {title: "Portfolio item title 3", img: IMG1, github:"https://github.com/", content:"Show more 3", demo:"https://github.com/" },
   {title: "Portfolio item title 4", img: IMG1, github:"https://github.com/", content:"Show more 4", demo:"https://github.com/" },
 ];
@@ -35,15 +35,15 @@ const Portfolio = () => {
                 <div className='portfolio__links'>
 
                 <a href={github} className='btn' target='_blank'>Github</a>
-
+                <a href={demo} className='btn long-text' target='_blank'>Demo</a>
                 <a className='btn long-text' onClick={() => handleClick(index)}>
                   {showMore[index] ? 'Less' : 'More'}
                 </a>
                 {showMore[index] && (
-                  <h2>{content}</h2>
+                  <div className='more-text'><h2>{content}</h2></div>
                 )}
 
-                <a href={demo} className='btn long-text' target='_blank'>Demo</a>
+               
 
                 </div>
               </article>
