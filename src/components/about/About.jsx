@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import "./about.css";
-import ME from '../../assets/me-about.jpg';
+import LAPTOP from '../../assets/laptop.jpg';
 
 const data = [
   {title: "Experience", experiance: "3 years of Experience", content: '1 content' },
@@ -25,7 +25,7 @@ const About = () => {
       <div className='container about__container'>
         <div className='about__me'>
           <div className='about__me-image'>
-            <img src={ME} alt='About Image' />
+            <img src={LAPTOP} alt='About Image' />
           </div>
         </div>
 

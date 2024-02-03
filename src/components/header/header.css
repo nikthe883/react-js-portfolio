@@ -1,5 +1,5 @@
 header{
-    height: 100vh;
+    height: 60vh;
     padding-top: 1rem;
     overflow: hidden;
 }
@@ -27,13 +27,14 @@ header{
 }
 
 .header__container .me{
-    background: linear-gradient(var(--color-primary),transparent);
+    
     width: 23rem;
     position: absolute;
     left: calc(50% - 11rem);
+    top:5rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
 
 }
 
@@ -65,7 +66,7 @@ header{
 /* MEDIA QUERIES MEDIUM DEVICES*/
 @media screen and (max-width:1024px){
     header{
-        height: 100vh;
+        height: 60vh;
     }
     .scroll__down, .header__socials, .show__hide__particles{
         bottom: 50%;
@@ -86,13 +87,14 @@ header{
 /* MEDIA QUERIES SMALL DEVICES*/
 @media screen and (max-width:600px){
     header{
-        height: 100vh;
+        height: 70vh;
     }
 
     .header__container .me{
         width: 70%;
         position: absolute;
         left: 15%;
+        top:7rem;
         
     }
     .introduction{
@@ -104,7 +106,7 @@ header{
 /* For extra small devices */
 @media screen and (max-width:380px){
     header{
-        height: 130vh;
+        height: 70vh;
     }
     .introduction{
         all: unset;

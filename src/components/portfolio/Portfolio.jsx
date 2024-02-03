@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
 import "./portfolio.css"
-import IMG1 from '../../assets/portfolio1.jpg'
+import IMG1 from '../../assets/portfolio2.jpg'
 
 
 const data = [
-  {title: "Portfolio item title 1", img: IMG1, github:"https://github.com/nikthe883/Django-Thought-Project", content:"S", demo:"https://github.com/" },
-  {title: "Portfolio item title 2", img: IMG1, github:"https://github.com/", content:"Show more 2wwwwwwwwwwwwwwwwwwwwwwwwwwwwwww222", demo:"https://github.com/" },
+  {title: "Portfolio item title 1", img: IMG1, github:"https://github.com/nikthe883/Django-Thought-Project", content:"Show more 1", demo:"https://github.com/" },
+  {title: "Portfolio item title 2", img: IMG1, github:"https://github.com/", content:"Show more 2", demo:"https://github.com/" },
   {title: "Portfolio item title 3", img: IMG1, github:"https://github.com/", content:"Show more 3", demo:"https://github.com/" },
   {title: "Portfolio item title 4", img: IMG1, github:"https://github.com/", content:"Show more 4", demo:"https://github.com/" },
 ];
