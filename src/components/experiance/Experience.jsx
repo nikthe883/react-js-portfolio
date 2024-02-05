@@ -5,7 +5,7 @@ const data = [
   { title: "Python", experiance: "Advanced" },
   { title: "Python", experiance: "Advanced" },
   { title: "Python", experiance: "Advanced" },
-  { title: "Python", experiance: "Advanced" },
+  { title: "Python", experiance:  "Advanced" },
 ];
 
 const Experience = () => {
