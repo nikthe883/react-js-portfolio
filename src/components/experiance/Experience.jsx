@@ -16,7 +16,7 @@ const Experience = () => {
       <div className="container experience__container">
         {data.map(({title, experiance }) => {
           return (
-            <div className="experience__language">
+            <div  className="experience__language">
               <h3>{title}</h3>
               <h4>{experiance}</h4>
             </div>
