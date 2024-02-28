@@ -20,21 +20,25 @@ header{
     align-items: center;
     font-size: 2rem;
     padding: 1rem;
+
 }
+
 .header__socials a{
+
     padding-left: 1rem;
-   
 }
 
 .header__container .me{
     
+
     width: 23rem;
     position: absolute;
     left: calc(50% - 11rem);
-    top:5rem;
+    top:3rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 2rem 1.5rem 1.5rem 1.5rem;
+    z-index: -1;
 
 }
 
