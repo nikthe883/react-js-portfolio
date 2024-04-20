@@ -22,10 +22,7 @@ const Header = ({showParticles, handleToggleParticles}) => {
         <CTA></CTA>
         <HeaderSocial></HeaderSocial>
 
-        <div className="me">
-          <img src={ME} alt='me'></img>
-        </div>
-        
+ 
 
         <a href='#contact' className='scroll__down'>Scroll To Bottom</a>
         <a href='#!' className='show__hide__particles' onClick={handleToggleParticles}>
