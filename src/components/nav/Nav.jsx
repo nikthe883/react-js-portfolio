@@ -14,6 +14,7 @@ const Nav = () => {
         <Link activeClass="active"  spy to="about">About</Link>
         <Link activeClass="active"  spy to="experience">Experience</Link>
         <Link activeClass="active"  spy to="portfolio">Projects</Link>
+        <Link activeClass="active"  spy to="certificates">Certificates</Link>
         <Link activeClass="active"  spy to="contact">Contact</Link>
       </nav>
     </div>
