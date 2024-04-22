@@ -1,54 +1,107 @@
-/* Slideshow */
-
 #certificates{
-    height:auto;
-    margin-top: 7rem;
-    
+  height:auto;
+  margin-top: 7rem;
 }
 
+.certificates__container{
+  display: flex; /* Switch to flexbox layout */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 1.5rem; /* Maintains space between items */
+  
+  align-items: flex-start; /* Aligns items to the top of the container */
+}
+.certificates__item {
+  position: relative; /* Needed for absolute positioning of the content */
+  width: calc(33.333% - 1rem); /* Adjust the width as necessary */
+  margin-bottom: 2rem; /* Space for the expanding content */
+  
+  height: auto;
+  background: #1560bd;
+  border: 1px solid rgb(34, 54, 235);
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
 
-.slideshow {
-    margin: 1.5rem;
-    overflow: hidden;
-    max-width: 50%;
-  }
+  -webkit-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+  -moz-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+  box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+
+}
+.certificates__item > h2{
+  margin-bottom: 1rem;
+}
+
+.certificates__links {
+  display: flex; /* Use flexbox to control the layout of the buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically if needed */
+  flex-wrap: wrap; /* Wrap buttons to a new line if they don't fit */
+
+}
+
+.certificates__links a{
+  margin: 1rem 0.3rem 1rem 0.3rem;
+
+}
+
+.certificates__item-image{
+  border-radius: 2.5rem;
+  overflow: hidden;
+
+}
+
+.more-text{
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.more-img{
+  margin-top: 2rem;
+  opacity: 0.8;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+
+
+  -webkit-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+  -moz-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+  box-shadow: inset 0px 0px 54px -1px rgba(0, 0, 0, 0.63);
+}
+
+@media screen and (min-width:600px) and (max-width:1024px){
+.certificates__container{
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+.certificates__item {
+  width: 100%; /* Make each certificate take full width */
   
-  .slideshowSlider {
-    white-space: nowrap;
-    transition: ease 2000ms;
-    
+}
+
+.certificates__links {
+  display: flex; /* Use flexbox to control the layout of the buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically if needed */
+  flex-wrap: wrap; /* Wrap buttons to a new line if they don't fit */
+}
+
+}
+
+@media screen and (max-width:600px){
+  .certificates__container{
+      display: flex;
+      flex-direction: column;
+      
 
   }
-  
-  
-  .slide {
-    display: inline-block;
-    filter: brightness(70%);
-    height: 55rem;
-    width: calc(100% - 30px);
-    margin-right: 30px;
-    border-radius: 40px;
+  .certificates__item{
+      width: 90vw;
+      margin-left: 5vw;
+      font-size: small;
   }
 
-  /* Buttons */
-  
-  .slideshowDots {
-    text-align: center;
-  }
-  
-  .slideshowDot {
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-  
-    cursor: pointer;
-    margin: 15px 7px 0px;
-  
-    background-color: #c4c4c4;
-  }
-  
-  .slideshowDot.active {
-    background-color: #6a0dad;
-  }
-  
+
+
+}

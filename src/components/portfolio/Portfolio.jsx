@@ -5,10 +5,10 @@ import IMG1 from '../../assets/portfolio2.jpg'
 
 
 const data = [
-  {title: "Portfolio item title 1", img: IMG1, github:"https://github.com/nikthe883/Django-Thought-Project", content:"Show more 1", demo:"https://github.com/" },
-  {title: "Portfolio item title 2", img: IMG1, github:"https://github.com/", content:"Show more 2", demo:"https://github.com/" },
-  {title: "Portfolio item title 3", img: IMG1, github:"https://github.com/", content:"Show more 3", demo:"https://github.com/" },
-  {title: "Portfolio item title 4", img: IMG1, github:"https://github.com/", content:"Show more 4", demo:"https://github.com/" },
+  {title: "Portfolio item title 1", img: IMG1, github:"https://github.com/nikthe883/Django-Thought-Project", content:"Show more 111333331111", demo:"https://github.com/" },
+  {title: "Portfolio item title 2", img: IMG1, github:"https://github.com/", content:"Show more 2223333333222", demo:"https://github.com/" },
+  {title: "Portfolio item title 3", img: IMG1, github:"https://github.com/", content:"Show more 32333332222", demo:"https://github.com/" },
+  {title: "Portfolio item title 4", img: IMG1, github:"https://github.com/", content:"Show more 423333332222", demo:"https://github.com/" },
 ];
 
 const Portfolio = () => {
@@ -31,7 +31,7 @@ const Portfolio = () => {
       {data.map(({ id, title, img, github, content, demo }, index) => (
               <article key={id} className='portfolio__item'>
                 <h2>{title}</h2>
-                <img src={img}></img>
+                <img className='porfolio__image' src={img}></img>
                 <div className='portfolio__links'>
 
                 <a href={github} className='btn' target='_blank'>Github</a>

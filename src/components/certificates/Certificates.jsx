@@ -13,59 +13,59 @@ import c8 from '../../assets/8c.jpg';
 const imageSources = [c1, c2, c3, c4, c5, c6, c7, c8];
 const delay = 2500;
 
-function Certificates() {
-  const [index, setIndex] = useState(0);
-  const timeoutRef = useRef(null);
+const data = [
+  {title: "Python Basics", img: c1, content:"Show more 1", demo:"https://github.com/" },
+  {title: "Portfolio item title 2", img: c2,  content:"Show more 2", demo:"https://github.com/" },
+  {title: "Portfolio item title 3", img: c3, content:"Show more 3", demo:"https://github.com/" },
+  {title: "Portfolio item title 4", img: c3,  content:"Show more 4", demo:"https://github.com/" },
+];
 
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
+const Certificates = () => {
 
-  useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(() => 
-      setIndex(prevIndex => prevIndex === imageSources.length - 1 ? 0 : prevIndex + 1),
-      delay
-    );
+  const [showMore, setShowMore] = useState(Array(data.length).fill(false));
 
-    return () => {
-      resetTimeout();
-    };
-  }, [index]);
+  const handleClick = (index) => {
+    const newShowMore = [...showMore];
+    newShowMore[index] = !newShowMore[index];
+    setShowMore(newShowMore);
+  };
 
   return (
     <section id='certificates'>
-      <div className="container slideshow">
-        <div
-          className="slideshowSlider"
-          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-        >
-          {imageSources.map((src, index) => (
-            <div
-              className="slide"
-              key={index}
-              style={{ backgroundImage: `url(${src})` }}
-            ></div>
-          ))}
-        </div>
+    <h3> My courses </h3>
+    <h1> Certificates </h1>
 
-        <div className="slideshowDots">
-          {imageSources.map((_, idx) => (
-            <div
-              key={idx}
-              className={`slideshowDot${index === idx ? " active" : ""}`}
-              onClick={() => {
-                setIndex(idx);
-              }}
-            ></div>
-          ))}
-        </div>
-      </div>
+    <div className='container certificates__container'>
+
+      {data.map(({ id, title, img, content}, index) => (
+              <article key={id} className='certificates__item'>
+                <h2>{title}</h2>
+                <div className='more-text'><h4>{content}</h4></div>
+                
+                <div className='certificates__links'>
+
+                <a className='btn long-text' onClick={() => handleClick(index)}>
+                  {showMore[index] ? 'Hide certificate' : 'Show certificate'}
+                </a>
+                {showMore[index] && (
+                   
+                    <div className='more-img'><h2><img src={img} alt={title} /></h2></div>
+                    
+                 
+                )}
+
+                </div>
+              </article>
+            ))}
+     
+
+    </div>
+    
     </section>
-  );
+    
+  )
 }
+
 
 export default Certificates;
 
