@@ -3,9 +3,7 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <footer>
-        <div>2024</div>
-    </footer>
+<footer>&copy; Copyright 2024 nikthe.tech</footer>
     
   )
 }
