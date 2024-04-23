@@ -4,9 +4,9 @@ import "./about.css";
 import LAPTOP from '../../assets/laptop.jpg';
 
 const data = [
-  {title: "Experience", experiance: "3 years of Experience", content: '1 content' },
-  {title: "Python", experiance: "Advanced", content: '2 content' },
-  {title: "React", experiance: "Intermediate", content: '3 content' },
+  {title: "FastComet", experiance: "Currently working", content: 'Chat and technical support.' },
+  {title: "Apple", experiance: "03.2023 - 09.2023", content: 'Operator for Apple Maps car.' },
+  {title: "Skuudle", experiance: "03.2021 - 02.2023", content: 'Data entry specialist.' },
 ];
 
 const About = () => {
@@ -33,13 +33,13 @@ const About = () => {
           <div className="about__cards">
             {data.map(({ id, title, experiance, content }, index) => (
               <article key={id} className='about__card'>
-                <h4>{title}</h4>
-                <p>{experiance}</p>
+                <h3>{title}</h3>
+                <p className='experience'>{experiance}</p>
                 <a className='btn' onClick={() => handleClick(index)}>
                   {showMore[index] ? 'Show Less' : 'Show More'}
                 </a>
                 {showMore[index] && (
-                  <h2>{content}</h2>
+                  <p className='content_p'>{content}</p>
                 )}
               </article>
             ))}

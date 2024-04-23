@@ -2,7 +2,21 @@
     height: auto;
     margin-top: 3rem;
 }
+.experience{
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+    
+}
 
+.content_p{
+    padding-top: 1rem;
+    line-height: 1.5rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+    
+    
+}
 .about__container{
     display: grid;
     grid-template-columns: 35% 50%;
@@ -27,15 +41,18 @@ h2,h5{
     transform: rotate(0deg);
 }
 .about__cards{
-    display:flex;
-    gap: 1.5rem;
-    text-align: center;
+    display: flex; /* Switch to flexbox layout */
+    flex-wrap: nowrap; /* Allows items to wrap to the next line */
+    gap: 2rem; /* Maintains space between items */
+    align-items: center; /* Aligns items to the top of the container */
 
 }
 .about__card{
+    
+    
     background: #1560bd;
     border: 1px solid rgb(34, 54, 235);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 0.5rem;
     transition: var(--transition);
     -webkit-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
