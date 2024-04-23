@@ -20,29 +20,18 @@ const Highlight = () => {
   };
 
   return (
-    <section id='portfolio'>
+    <section id='highlight'>
     <h3> Project Highlight </h3>
     <h1> ShopyThing </h1>
 
-    <div className='container portfolio__container'>
+    <div className='container highlight__container'>
 
       {data.map(({ id, title, img, github, content, demo }, index) => (
-              <article key={id} className='portfolio__item'>
+              <article key={id} className='highlight__item'>
                 <h2>{title}</h2>
-                <img className='porfolio__image' src={img}></img>
-                <div className='portfolio__links'>
-                <Link spy to="portfolio">Projects</Link>
-                <a href={github} className='btn' target='_blank'>Github</a>
-                <a href={demo} className='btn long-text' target='_blank'>Demo</a>
-                <a className='btn long-text' onClick={() => handleClick(index)}>
-                  {showMore[index] ? 'Less' : 'More'}
-                </a>
-                {showMore[index] && (
-                  <div className='more-text'><h2>{content}</h2></div>
-                )}
-
-               
-
+                <img className='highlight__image' src={img}></img>
+                <div className='highlight__links'>
+                <Link className='btn long-text' spy to="portfolio">Go to Project</Link>
                 </div>
               </article>
             ))}
