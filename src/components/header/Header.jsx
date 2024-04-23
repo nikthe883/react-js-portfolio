@@ -3,6 +3,7 @@ import "./header.css"
 import CTA from './CTA'
 import ME from '../../assets/mee.png'
 import HeaderSocial from './HeaderSocials'
+import Highlight from './MostRecentHeader'
 
 
 const Header = ({showParticles, handleToggleParticles}) => {
@@ -21,6 +22,7 @@ const Header = ({showParticles, handleToggleParticles}) => {
         
         <CTA></CTA>
         <HeaderSocial></HeaderSocial>
+        <Highlight></Highlight>
 
  
 

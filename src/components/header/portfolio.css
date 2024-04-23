@@ -1,0 +1,114 @@
+#portfolio{
+    margin-top: 7rem;
+    
+}
+
+.portfolio__container{
+    display: flex; /* Switch to flexbox layout */
+    align-items: center;
+    justify-content: center;
+   
+}
+.portfolio__item {
+    
+    position: relative; /* Needed for absolute positioning of the content */
+    margin-bottom: 2rem; /* Space for the expanding content */
+    background: #1560bd;
+    border: 1px solid rgb(34, 54, 235);
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+
+    -webkit-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+    -moz-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+    box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+
+   
+
+}
+.portfolio__item > h2{
+    margin-bottom: 1rem;
+}
+
+.portfolio__links {
+    display: flex; /* Use flexbox to control the layout of the buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically if needed */
+    flex-wrap: wrap;
+   
+    
+}
+.porfolio__image{
+    height: auto;
+   
+    border: 1px solid rgb(34, 54, 235);
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+   
+    -webkit-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+    -moz-box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+    box-shadow: inset 0px 0px 54px -1px rgba(0,0,0,0.63);
+
+}
+
+.portfolio__links a{
+    margin: 1rem 0.2rem 1rem 0.2rem;
+}
+
+.portfolio__item-image{
+    border-radius: 2.5rem;
+    overflow: hidden;
+
+}
+
+.more-text{
+
+    white-space: pre-wrap;
+    word-break: break-word;
+   
+
+}
+
+
+@media screen and (min-width:600px) and (max-width:1024px){
+.portfolio__container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.portfolio__item {
+    width: 100%; /* Make each certificate take full width */
+    
+  }
+.portfolio__links {
+    display: flex; /* Use flexbox to control the layout of the buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically if needed */
+    flex-wrap: wrap; /* Wrap buttons to a new line if they don't fit */
+}
+.portfolio__links a{
+    margin: 1rem 2rem 1rem 2rem;
+
+}
+
+}
+
+@media screen and (max-width:600px){
+    .portfolio__container{
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .portfolio__item{
+        width: 90vw;
+        margin-left: 5vw;
+        font-size: small;
+    }
+
+
+
+}
