@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link } from "react-scroll";
-import "./portfolio.css"
+import "./highlight.css"
 import IMG1 from '../../assets/portfolio2.jpg'
 
 

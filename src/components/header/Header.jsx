@@ -19,18 +19,17 @@ const Header = ({showParticles, handleToggleParticles}) => {
         <h1> Hello I am Peter</h1>
         <h3 className='text-light'>Junior Python Developer</h3>
         </div>
-        
+        <a href='#contact' className='scroll__down'>Scroll To Bottom</a>
+        <a href='#!' className='show__hide__particles' onClick={handleToggleParticles}>
+        {showParticles ? 'Hide Particles' : 'Show Particles'}
+      </a>
         <CTA></CTA>
         <HeaderSocial></HeaderSocial>
         <Highlight></Highlight>
 
  
 
-        <a href='#contact' className='scroll__down'>Scroll To Bottom</a>
-        <a href='#!' className='show__hide__particles' onClick={handleToggleParticles}>
-        {showParticles ? 'Hide Particles' : 'Show Particles'}
-        
-      </a>
+
         
       </div>
     </header>

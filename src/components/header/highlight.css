@@ -1,5 +1,7 @@
 #highlight{
-    margin-top: 6rem;
+    margin-top: 8rem;
+    
+    padding: 5rem;
     
 }
 
@@ -7,12 +9,13 @@
     display: flex; /* Switch to flexbox layout */
     align-items: center;
     justify-content: center;
-   
+    
+
 }
 .highlight__item {
     
-    position: relative; /* Needed for absolute positioning of the content */
-    margin-bottom: 2rem; /* Space for the expanding content */
+    position: relative; 
+    margin-bottom: 2rem; 
     background: #1560bd;
     border: 1px solid rgb(34, 54, 235);
     padding: 1rem;
