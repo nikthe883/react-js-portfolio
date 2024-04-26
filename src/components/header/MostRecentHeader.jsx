@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link } from "react-scroll";
 import "./highlight.css"
-import IMG1 from '../../assets/portfolio2.jpg'
+import IMG1 from '../../assets/shoppy.PNG'
 
 
 const Highlight = () => {
@@ -18,7 +18,7 @@ const Highlight = () => {
             <h2>ShopyThing</h2>
             <img className='highlight__image' src={IMG1}></img>
             <div className='highlight__links'>
-            <Link className='btn long-text' spy to="portfolio">Go to Project</Link>
+            <Link className='btn long-text' spy to="portfolio">Go to Projects</Link>
             </div>
         </article>
     </div>

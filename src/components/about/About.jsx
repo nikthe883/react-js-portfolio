@@ -46,11 +46,16 @@ const About = () => {
           </div>
 
           <div>
-            <p className='about__me__p'>Some text some text some text some text some text some text some textsome
-              text some textsome textsome textsome textsome textsome
-              some textsome textsome textsome textsome textsome text
-              some textsome textsome textsome textsome text
-              some textsome textsome textsome texttextsome textsome textsome text</p>
+            <p className='about__me__p'>Hello. I am an aspiring  Python developer eager to launch my career in the tech industry. 
+            With a robust foundation in Python and the additional skills I have in JavaScript, HTML, CSS, basic React, SQL, and Django, 
+            I am passionate about creating innovative solutions. 
+            <br></br>
+            <span style={{ marginLeft: '2rem' }}>
+              Currently working in technical support role where I have honed my problem-solving abilities and technical acumen. 
+            In my free time, I enjoy playing basketball, watching movies, and  of course coding, continually striving to enhance my skills and bring my unique ideas to life.
+            </span>
+            </p>
+
           </div>
           <div className='lets__talk'>
             <a href='#contact' className='btn btn-primary'> Lets Talk!</a>

@@ -3,9 +3,11 @@ import "./experiance.css";
 
 const data = [
   { title: "Python", experiance: "Advanced" },
-  { title: "Python", experiance: "Advanced" },
-  { title: "Python", experiance: "Advanced" },
-  { title: "Python", experiance:  "Advanced" },
+  { title: "HTML", experiance: "Intermediate" },
+  { title: "CSS", experiance: "Intermediate" },
+  { title: "React", experiance:  "Begginer" },
+  { title: "Django", experiance:  "Intermediate" },
+  { title: "PostgreSQL", experiance:  "Begginer" },
 ];
 
 const Experience = () => {
