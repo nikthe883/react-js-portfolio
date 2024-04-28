@@ -9,15 +9,21 @@ import c5 from '../../assets/5c.jpg';
 import c6 from '../../assets/6c.jpg';
 import c7 from '../../assets/7c.jpg';
 import c8 from '../../assets/8c.jpg';
+import c9 from '../../assets/9c.jpg';
 
 const imageSources = [c1, c2, c3, c4, c5, c6, c7, c8];
 const delay = 2500;
 
 const data = [
   {title: "Python Basics", img: c1, content:"Show more 1", demo:"https://github.com/" },
-  {title: "Portfolio item title 2", img: c2,  content:"Show more 2", demo:"https://github.com/" },
-  {title: "Portfolio item title 3", img: c3, content:"Show more 3", demo:"https://github.com/" },
-  {title: "Portfolio item title 4", img: c3,  content:"Show more 4", demo:"https://github.com/" },
+  {title: "Python Fundamentals", img: c2,  content:"Show more 2", demo:"https://github.com/" },
+  {title: "Python Advanced", img: c3, content:"Show more 3", demo:"https://github.com/" },
+  {title: "HTML & CSS", img: c4,  content:"Show more 4", demo:"https://github.com/" },
+  {title: "Python OOP", img: c5,  content:"Show more 4", demo:"https://github.com/" },
+  {title: "JS Front-End", img: c6,  content:"Show more 4", demo:"https://github.com/" },
+  {title: "Python Web", img: c9,  content:"Show more 4", demo:"https://github.com/" },
+  {title: "Math Concepts", img: c8,  content:"Show more 4", demo:"https://github.com/" },
+  
 ];
 
 const Certificates = () => {
