@@ -8,10 +8,10 @@ import IMG4 from '../../assets/wolf.PNG'
 
 
 const data = [
-  {title: "Portfolio item title 1", img: IMG1, github:"https://github.com/nikthe883/Django-Thought-Project", content:"Show more 111333331111", demo:"https://github.com/" },
-  {title: "Portfolio item title 2", img: IMG2, github:"https://github.com/", content:"Show more 2223333333222", demo:"https://github.com/" },
-  {title: "Portfolio item title 3", img: IMG3, github:"https://github.com/", content:"Show more 32333332222", demo:"https://github.com/" },
-  {title: "Portfolio item title 4", img: IMG4, github:"https://github.com/", content:"Show more 423333332222", demo:"https://github.com/" },
+  {title: "ShoppyThing", img: IMG1, github:"https://github.com/nikthe883/dev", content:"Django ecommerce  project", demo:"https://testdjango.nikthe.tech/" },
+  {title: "Edenthought", img: IMG2, github:"https://github.com/nikthe883/Django-Thought-Project", content:"Django blog project", demo:"https://github.com/nikthe883/Django-Thought-Project" },
+  {title: "Huffman algorithm", img: IMG3, github:"https://github.com/nikthe883/huffman-project", content:"Huffman compression algorithm research", demo:"https://github.com/nikthe883/huffman-project" },
+  {title: "Wolfenstein", img: IMG4, github:"https://github.com/nikthe883/WolfensteinLikeCopy", content:"2.5D Wolfenstein like copy written in Python", demo:"https://github.com/nikthe883/WolfensteinLikeCopy" },
 ];
 
 
