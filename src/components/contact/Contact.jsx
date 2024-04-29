@@ -11,6 +11,7 @@ const Contact = () => {
   const handleClick = () => {
     setButtonText('Message Sent');
 
+    
     setTimeout(() => {
         setButtonText('Submit');
     }, 3000); // Reverts back to 'Submit' after 2 seconds
