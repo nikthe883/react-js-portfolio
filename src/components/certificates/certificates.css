@@ -32,6 +32,7 @@
   margin-bottom: 1rem;
 }
 
+
 .certificates__links {
   display: flex; /* Use flexbox to control the layout of the buttons */
   justify-content: center; /* Center the buttons horizontally */
